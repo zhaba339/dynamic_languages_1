@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <h1>Калькулятор объемов</h1>
+    <form action="/calculate" method="post">
+        <label for="shape">Выберите фигуру:</label>
+        <select name="shape" id="shape">
+            <option value="cube">Куб</option>
+            <option value="sphere">Сфера</option>
+            <!-- Добавьте другие фигуры по мере необходимости -->
+        </select>
+        <br>
+
+        <!-- Добавленные поля для ввода -->
+        <label for="length">Введите длину (для куба):</label>
+        <input type="number" name="length" step="any">
+        <br>
+
+        <label for="radius">Введите радиус (для сферы):</label>
+        <input type="number" name="radius" step="any">
+        <br>
+        <!-- Конец добавленных полей -->
+
+        <label for="precision">Точность:</label>
+        <input type="number" name="precision" step="any" required>
+        <br>
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
